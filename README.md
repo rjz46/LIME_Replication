@@ -20,7 +20,7 @@ Components
 
 - Experiment_2 ("Section 5.3 - Should I trust this prediction?")
 
-##Procedure for LIME
+## Replicating Procedure for LIME
 
 <img src="algorithm_1.png" style="width: 100px;"/>
 
