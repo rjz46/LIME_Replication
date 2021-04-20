@@ -34,7 +34,7 @@ The results seems similar to the explanations from figure 2 with the order (by t
 
 ## Experiment 1 - Replicating the results from 5.2
 
-Testing if the explanations are similar to a well known model (LR). Use the features from the LR model as gold label.
+Testing if the explanations are similar to a well known interpretable model (LR). Use the features from the LR model as gold label.
 
 | Explainer     | LR        |
 | ------------- |:---------:|
