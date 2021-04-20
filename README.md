@@ -1,6 +1,6 @@
 # LIME_Replication
 
-In this project, I tried to build LIME and replicate the findings (figure 2, experiment 1 (section 5.2) & 2 (section 5.3)) from the paper. I had a Random explainer as baseline, where explanations are randomly chosen from the instance as comparison for sanity check. 
+In this project, I tried to build LIME ["Why Should I Trust You?": Explaining the Predictions of Any Classifier](https://arxiv.org/pdf/1602.04938.pdf) and replicate the findings (figure 2, experiment 1 (section 5.2) & 2 (section 5.3)) from the paper. I had a Random explainer as baseline, where explanations are randomly chosen from the instance as comparison for sanity check. 
 
 Components
 
@@ -32,6 +32,8 @@ The results seems similar to the explanations from figure 2 with the order (by t
 <img src="figure_2.png" width="600px;"/>
 
 
+Results in parentheses are from the paper.
+
 ## Experiment 1 - Replicating the results from 5.2
 
 Testing if the explanations are similar to a well known interpretable model (LR). Use the features from the LR model as gold label.
@@ -40,17 +42,17 @@ Books
 
 | Explainer     | LR        |
 | ------------- |:---------:|
-| Random        |    (17.4)  |
-| LIME          |    (92.1)  |
+| Random        | 19.9 (17.4)  |
+| LIME          | 23.1 (92.1)  |
 
 DVDs
 
 | Explainer     | LR        |
 | ------------- |:---------:|
-| Random        |    (19.2)  |
-| LIME          |    (90.2)  |
+| Random        | 20.8 (19.2)  |
+| LIME          | 24.7 (90.2)  |
 
-Something went wrong here and we couldn't find the 
+Something went wrong here where the explanations are as good as random and I couldn't find the issue. (will continue to work on fixing it) My guess is it's the experiment and not the model since the results from Experiment 2 and Figure 2 makes sense. 
 
 ## Experiment 2 - Replicating the results from 5.3
 
@@ -60,16 +62,13 @@ Books
 
 | Explainer     | LR    | NN    |   SVM |
 | ------------- | -----:| -----:| -----:|
-| Random        |    (14.6) | (14.8) | (14.7)  |
-| LIME          |    (96.6)  | (94.5)   |  (96.7)   |
-
+| Random        | 13.8 (14.6) | 14.5 (14.8) | 14.2 (14.7) |
+| LIME          | 96.7 (96.6) | 94.1 (94.5) | 96.7 (96.7) |
 
 DVDs
 
 | Explainer     | LR    | NN    |   SVM |
 | ------------- | -----:| -----:| -----:|
-| Random        |    (14.2) |(14.3)  | (14.4)|
-| LIME          |    (96.6) | (91.8)   | (95.6)|
-
-
+| Random        | 14.6 (14.2) | 15. 0(14.3) | 14.7 (14.4) |
+| LIME          | 96.9 (96.6) | 90.8 (91.8) | 96.7 (95.6) |
 
