@@ -36,10 +36,19 @@ The results seems similar to the explanations from figure 2 with the order (by t
 
 Testing if the explanations are similar to a well known interpretable model (LR). Use the features from the LR model as gold label.
 
+Books
+
 | Explainer     | LR        |
 | ------------- |:---------:|
-| Random        |         |
-| LIME          |         |
+| Random        |    (17.4)  |
+| LIME          |    (92.1)  |
+
+DVDs
+
+| Explainer     | LR        |
+| ------------- |:---------:|
+| Random        |    (19.2)  |
+| LIME          |    (90.2)  |
 
 Something went wrong here and we couldn't find the 
 
@@ -51,16 +60,16 @@ Books
 
 | Explainer     | LR    | NN    |   SVM |
 | ------------- | -----:| -----:| -----:|
-| Random        |     |  |  |
-| LIME          |       |    |    |
+| Random        |    (14.6) | (14.8) | (14.7)  |
+| LIME          |    (96.6)  | (94.5)   |  (96.7)   |
 
 
 DVDs
 
 | Explainer     | LR    | NN    |   SVM |
 | ------------- | -----:| -----:| -----:|
-| Random        |     |  |  |
-| LIME          |       |    |    |
+| Random        |    (14.2) |(14.3)  | (14.4)|
+| LIME          |    (96.6) | (91.8)   | (95.6)|
 
 
 
