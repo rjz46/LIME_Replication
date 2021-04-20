@@ -23,7 +23,7 @@ Procedure for LIME
 
 I first built the bag of words model using sklearn's countVectorizer. Then find nonzeros features from the sparse matrix generated from the vectorizer. I then permuted the nonzeros features of the instance vector randomly to generate 15000 number of samples. Then I got the labels from samples using the specified classifier. Then I calculated the consine distance of those samples and weight it by the distance kernel specified in the paper. Then I used those weights and labels to perform regularization on the features to select the K number of features and fit a localized linear model on weighted distances and labels.
 
-# Replicating Figure 2
+## Replicating Figure 2
 The results for figure 2 seems similar with order of the explanations ordered by coefficients slightly off.
 
 
