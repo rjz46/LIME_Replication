@@ -4,7 +4,7 @@ In this project, I tried to build LIME and replicate the findings (figure 2, exp
 
 Components
 
-- Vectorizer
+- Bag of Words
 
 - Explainers
   - LIME
@@ -22,7 +22,7 @@ Experiment_2 ("Section 5.3 - Should I trust this prediction?")
 Procedure for LIME
 <img src="algorithm_1.png" alt="Drawing" style="width: 400px;"/>
 
-The model was first built with the bag of words model using sklearn's countVectorizer. Then I find nonzeros features from the sparse matrix generated from the vectorizer. And permuted the nonzeros features of the instance vector randomly to generate 15000 number of samples. Then I got the labels from samples using the specified classifier (LR, NN, SVM). I calculated the consine distance of those samples and weight it by the distance kernel specified in the paper. Then I used those weights and labels to perform regularization on the features to select the K number of features and fit a localized linear model on weighted distances and labels.
+The model was first built with the bag of words model using sklearn's countVectorizer. Then I find nonzeros features from the sparse matrix generated from the vectorizer. And permuted the nonzeros features of the instance vector randomly to generate 15000 number of samples. Then I got the labels from samples using the specified classifier (LR, NN, SVM). I calculated the consine distance of those samples and weight it by the distance kernel specified in the paper. Then I used those weights and labels to perform regularization on the features to select the K number of features and fit a localized linear model on the weighted distances and labels.
 
 ## Replicating Figure 2
 The results seems similar to the explanations from figure 2 with the order (by the absolute value of the coefficients) slightly off.
