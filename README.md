@@ -1,6 +1,6 @@
 # LIME_Replication
 
-In this project, I tried to build LIME and replicate the findings (figure 2, experiment 1 (section 5.2) & 2 (section 5.3) from the paper. I had a Random explainer as baseline, where explanations are randomly chosen from the instance as comparison for sanity check. 
+In this project, I tried to build LIME and replicate the findings (figure 2, experiment 1 (section 5.2) & 2 (section 5.3)) from the paper. I had a Random explainer as baseline, where explanations are randomly chosen from the instance as comparison for sanity check. 
 
 Components
 
@@ -29,7 +29,7 @@ The model was first built with the bag of words model using sklearn's countVecto
 ## Replicating Figure 2
 The results seems similar to the explanations from figure 2 with the order (by the absolute value of the coefficients) slightly off.
 
-<img src="figure_2.png"style="width: 100px;"/>
+<img src="figure_2.png" style="width: 100px;"/>
 
 
 ## Experiment 1 - Replicating the results from 5.2
